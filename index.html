@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stolen Hours Software — Built after bedtime</title>
+<meta name="description" content="Stolen Hours Software: family software from Raleigh, NC, built after bedtime. Software from the hours nobody wanted.">
+<meta property="og:title" content="Stolen Hours Software">
+<meta property="og:description" content="Built after bedtime. Family software from Raleigh, NC.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="hourglass.png">
+<style>
+  :root{
+    --midnight:#16233C;
+    --midnight-deep:#101A2E;
+    --cream:#FFF6E9;
+    --cream-dim:#D9CFBB;
+    --orange:#C75B21;
+    --gold:#E8A33D;
+    --ink:#1D1710;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--midnight-deep);
+    color:var(--cream);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header.hero{text-align:center;padding:0 0 8px}
+  .banner{width:100%;display:block}
+  .mark{width:104px;height:104px;border-radius:22px;margin:-52px auto 0;position:relative;
+    box-shadow:0 10px 34px rgba(0,0,0,.5);display:block}
+  h1{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(2.1rem,6vw,3.3rem);
+    font-weight:700;letter-spacing:.01em;
+    margin-top:22px;color:var(--cream);
+  }
+  .tagline{
+    font-family:Georgia,"Times New Roman",serif;font-style:italic;
+    font-size:clamp(1.15rem,3.4vw,1.5rem);color:var(--gold);margin-top:6px;
+  }
+  .sub{color:var(--cream-dim);margin-top:10px;font-size:1rem}
+  section{padding:44px 0 6px}
+  h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:1.55rem;color:var(--cream);margin-bottom:14px;
+    display:flex;align-items:center;gap:12px;
+  }
+  h2::after{content:"";flex:1;height:1px;background:linear-gradient(to right,var(--orange),transparent)}
+  p{color:var(--cream-dim);margin-bottom:14px;font-size:1.05rem}
+  p strong, li strong{color:var(--cream)}
+  .bench{display:grid;grid-template-columns:1fr;gap:14px}
+  @media(min-width:640px){.bench{grid-template-columns:1fr 1fr}}
+  .card{
+    background:var(--midnight);
+    border:1px solid rgba(232,163,61,.22);
+    border-radius:14px;padding:20px 20px 16px;
+  }
+  .card h3{font-family:Georgia,serif;font-size:1.2rem;color:var(--cream);margin-bottom:6px}
+  .card p{font-size:.98rem;margin-bottom:8px}
+  .card .live{color:var(--gold);font-size:.85rem;letter-spacing:.04em;text-transform:uppercase}
+  a{color:var(--gold);text-decoration:none;border-bottom:1px dotted var(--gold)}
+  a:hover{color:var(--orange);border-bottom-color:var(--orange)}
+  ol.rules{list-style:none;counter-reset:rule}
+  ol.rules li{
+    counter-increment:rule;position:relative;
+    padding:10px 0 10px 52px;color:var(--cream-dim);font-size:1.03rem;
+    border-bottom:1px solid rgba(255,246,233,.08);
+  }
+  ol.rules li:last-child{border-bottom:none}
+  ol.rules li::before{
+    content:counter(rule);
+    position:absolute;left:0;top:8px;
+    width:36px;height:36px;border-radius:50%;
+    border:1px solid var(--orange);color:var(--gold);
+    font-family:Georgia,serif;font-size:1.05rem;
+    display:flex;align-items:center;justify-content:center;
+  }
+  footer{
+    text-align:center;padding:52px 0 44px;margin-top:40px;
+    border-top:1px solid rgba(255,246,233,.1);color:var(--cream-dim);font-size:.95rem;
+  }
+  footer .joint{font-family:Georgia,serif;font-style:italic;color:var(--gold);margin-top:6px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="banner" src="header.png" alt="A small house at night under a crescent moon, one window lit — someone is still awake inside, building something.">
+  <div class="wrap">
+    <img class="mark" src="hourglass.png" alt="The Stolen Hours hourglass — pixels and stars falling like sand.">
+    <h1>Stolen Hours Software</h1>
+    <div class="tagline">Built after bedtime.</div>
+    <div class="sub">Software from the hours nobody wanted. · Raleigh, North Carolina</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>The story</h2>
+    <p>Stolen Hours Software is what happens in a Raleigh house after the kids are asleep: a FedEx dispatcher with a developer's past, building the software his family actually needs — in the margins of the day, one stolen hour at a time, with his AI partner <strong>Fred</strong> riding shotgun.</p>
+    <p>No investors, no roadmap decks, no growth hacks. Just useful things, made carefully, at night.</p>
+  </section>
+
+  <section>
+    <h2>On the bench</h2>
+    <div class="bench">
+      <div class="card">
+        <h3>The Fridge Door</h3>
+        <p>Our family's private hub: the wall, the calendar, the week's dinners, the lists. Everything a family sticks on the fridge, in one place.</p>
+        <span class="live">Private · Family only</span>
+      </div>
+      <div class="card">
+        <h3>Bubble Tracks</h3>
+        <p>A family music-video jukebox: hundreds of hand-picked songs, safe for kids, built for living-room dance parties.</p>
+        <span class="live">Private · Family only</span>
+      </div>
+      <div class="card">
+        <h3>Brewery Compass</h3>
+        <p>A working guide to North Carolina breweries and beer festivals.</p>
+        <span class="live">Live · </span><a href="https://www.brewery-compass.com">brewery-compass.com</a>
+      </div>
+      <div class="card">
+        <h3>Mindless Musings</h3>
+        <p>The blog that started it all in 2008 — still publishing, still quirky.</p>
+        <span class="live">Live · </span><a href="https://www.mindless-musings.com">mindless-musings.com</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The house rules</h2>
+    <ol class="rules">
+      <li><strong>It has to work on a phone</strong> — one-handed, in a grocery store aisle.</li>
+      <li><strong>No subscription, ever.</strong> Software for families shouldn't rent them their own lives back.</li>
+      <li><strong>Private by default.</strong> Family data belongs to the family.</li>
+      <li><strong>Built after bedtime, shipped by morning.</strong></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Say hello</h2>
+    <p>📬 <a href="mailto:philip@mindless-musings.com">philip@mindless-musings.com</a> · Code at <a href="https://github.com/stolenhourssoftware">github.com/stolenhourssoftware</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Philip Harmon · Stolen Hours Software</div>
+    <div class="joint">A Stolen Hours joint · Raleigh, NC</div>
+  </div>
+</footer>
+
+</body>
+</html>
